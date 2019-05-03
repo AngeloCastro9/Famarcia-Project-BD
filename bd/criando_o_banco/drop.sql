@@ -1,1 +1,1 @@
-drop database sicaPharma
+drop database sicapharma

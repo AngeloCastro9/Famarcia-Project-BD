@@ -1,1 +1,1 @@
-create database sicaPharma
+create database sicapharma
