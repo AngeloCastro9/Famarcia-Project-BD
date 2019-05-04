@@ -21,7 +21,7 @@ CREATE TABLE  Unidades (
   telefone VARCHAR(45) ,
   farmaceutico_cpf VARCHAR(45) NOT NULL,
   Gerente_cpf VARCHAR(45) NOT NULL,
-  PRIMARY KEY (idUnidades, farmaceutico_cpf, Gerente_cpf),
+  PRIMARY KEY (idUnidades),
   CONSTRAINT fk_Unidades_farmaceutico1
     FOREIGN KEY (farmaceutico_cpf) REFERENCES farmaceutico (cpf),
     
@@ -136,12 +136,12 @@ CREATE TABLE Unidades_has_Medicamento (
 
 
 CREATE TABLE Funcionario (
-  nome VARCHAR(45) ,
+  nome VARCHAR(45),
   cpf VARCHAR(45) NOT NULL,
-  farmaceutico_cpf VARCHAR(45) NOT NULL,
-  Supervisor_cpf VARCHAR(45) NOT NULL,
-  Gerente_cpf VARCHAR(45) NOT NULL,
-  PRIMARY KEY (farmaceutico_cpf, cpf, Supervisor_cpf, Gerente_cpf),
+  farmaceutico_cpf VARCHAR(45) DEFAULT NULL,
+  Supervisor_cpf VARCHAR(45) DEFAULT NULL,
+  Gerente_cpf VARCHAR(45) DEFAULT NULL,
+  PRIMARY KEY (cpf),
   
   CONSTRAINT fk_Funcionario_farmaceutico1
     FOREIGN KEY (farmaceutico_cpf) REFERENCES farmaceutico (cpf),
