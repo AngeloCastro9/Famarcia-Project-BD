@@ -6,9 +6,9 @@ cnx = mysql.connector.connect(user='root', password='An323131',
 
 cursor = cnx.cursor()
 print("Segunda Consulta: ")
-cursor.execute("SELECT medico.nome, medico.especialidade, medicamento.nome, c.endereco, pre.quantidade FROM medico as medico, medicamento as medicamento, c as cliente pre as prescricao_has_cliente WHERE c.endereco = 'Fortaleza' && 'Itapipoca0', ", multi=True)
+cursor.execute("SELECT medico.nome, medico.especialidade, medicamento.nome, c.endereco, pre.quantidade FROM Medico as medico, Medicamento as medicamento, Cliente as c, prescricao_has_Medicamento as pre WHERE c.endereco IN ('Fortaleza', 'Itapipoca')")
 results = cursor
 for row in results:
-  print (row[0], "|", row[1], "|", row[2], "|", row[3])
+  print (row)
 cursor.close()
 cnx.close()

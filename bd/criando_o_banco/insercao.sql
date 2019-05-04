@@ -58,12 +58,12 @@ insert into Contato (idContato, telefone, Laboratorio_idLabot, Contato_idContato
 insert into Contato (idContato, telefone, Laboratorio_idLabot, Contato_idContato) values (5, '55555555', 5, 5);
 insert into Contato (idContato, telefone, Laboratorio_idLabot, Contato_idContato) values (6, '66666666', 6, 6);
 
-insert into Cliente (idCliente, cpf, nome, endereco, sexo, idade) values (1, '11111111', 'Josefina', 'rua A', 'F', 20);
-insert into Cliente (idCliente, cpf, nome, endereco, sexo, idade) values (2, '22222222', 'Karol', 'rua B', 'F', 19);
-insert into Cliente (idCliente, cpf, nome, endereco, sexo) values (3, '33333333', 'Bruna', 'Rua C', 'F');
-insert into Cliente (idCliente, cpf, nome, endereco ) values (4, '44444444', 'Bruno', 'Rua D');
-insert into Cliente (idCliente, cpf, nome) values (5, '555555555', 'Jose');
-insert into Cliente (idCliente, cpf, nome) values (6, '666666666', 'Maria');
+insert into Cliente (idCliente, cpf, nome, endereco, sexo, idade) values (1, '11111111', 'Josefina', 'Fortaleza', 'F', 20);
+insert into Cliente (idCliente, cpf, nome, endereco, sexo, idade) values (2, '22222222', 'Karol', 'Baturite', 'F', 19);
+insert into Cliente (idCliente, cpf, nome, endereco, sexo) values (3, '33333333', 'Bruna', 'Itapipoca', 'F');
+insert into Cliente (idCliente, cpf, nome, endereco ) values (4, '44444444', 'Bruno', 'Curitiba');
+insert into Cliente (idCliente, cpf, nome, endereco) values (5, '555555555', 'Jose', 'Itapipoca');
+insert into Cliente (idCliente, cpf, nome, endereco) values (6, '666666666', 'Maria', 'Fortaleza');
 
 insert into Medico (idMedico, cpf, nome, crm, especialidade, anos_de_experiencia) values (1, '1111111', 'Siqueira', '123456789', 'cirurgia plastica', 15);
 insert into Medico (idMedico, cpf, nome, crm, anos_de_experiencia) values (2, '2222222', 'Karolina', '987654321', 5);
