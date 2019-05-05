@@ -1,4 +1,3 @@
-
 insert into Supervisor (cpf) values ('111111111');
 insert into Supervisor (cpf) values ('2222222222');
 insert into Supervisor (cpf) values ('333333333'); 
